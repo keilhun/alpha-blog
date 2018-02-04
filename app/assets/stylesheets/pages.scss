@@ -1,0 +1,26 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.head-image {
+  background-image: image-url('dragon2.jpg');
+  background-repeat: no-repeat;
+  background-size: 900px 500px;
+  background-position: center;
+  height: 500px;
+}
+.white {
+  color: white;
+}
+.red {
+  color: red;
+}
+.grey-background {
+  background-color: grey;
+}
+.light-grey-background {
+  background-color: lightgray;
+}
+.main-content {
+  margin-top: 10px;
+}
