@@ -1,0 +1,57 @@
+@import 'bootstrap';
+
+.jumbotron {
+  background-image: asset-url('dragon2.jpg');
+  background-repeat: no-repeat;
+  background-size: 900px 500px;
+  background-position: center;
+  background-color: white;
+  height: 500px;
+  margin-top: 15px;
+}
+.white {
+  color: white;
+}
+
+.bg-blue {
+  background-color: #08088A;
+}
+
+#logo {
+  font-size: 1.9em;
+  font-family: 'Berkshire Swash', cursive;
+  letter-spacing: -1px;
+  fint-weight: bold;
+  color: purple;
+}
+
+#logo:hover {
+  color: black;
+}
+.title {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 4em;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+footer a:hover {
+  color: #222;
+}
+footer span {
+  font-size: 0.8em;
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+  li {
+    float: left;
+    margin-left: 15px;
+  }
+}
