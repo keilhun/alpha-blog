@@ -22,12 +22,20 @@
       </li>
     </ul>
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <%= link_to 'Sign Up', '#', class: 'nav-link' %>
-      </li>
-      <li class="nav-item">
-        <%= link_to 'Log in', '#', class: 'nav-link' %>
-      </li>
+
+      <% if !logged_in? %>
+        <li class="nav-item">
+          <%= link_to 'Log in', login_path, class: 'nav-link' %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Sign Up', signup_path, class: 'nav-link' %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to 'Log out', logout_path, method: :delete, class: 'nav-link' %>
+
+        </li>
+      <% end %>
     </ul>
   </div>
 </nav>

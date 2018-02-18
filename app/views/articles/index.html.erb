@@ -1,4 +1,4 @@
 <h1 class="text-center">Listing articles</h1>
-<div class="paging"><%= will_paginate %></div>
+<div><%= will_paginate @articles, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer %></div>
 <%= render 'article', obj: @articles %>
-<div class="paging"><%= will_paginate %></div>
+<div class="paging"><%= will_paginate @articles, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer %></div>
