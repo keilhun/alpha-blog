@@ -11,7 +11,6 @@
           <%= time_ago_in_words(article.created_at) %> ago,
           last updated: <%= time_ago_in_words(article.updated_at) %> ago
         </div>
-
       </div>
       <% if logged_in? && (current_user == article.user || current_user.admin?) %>
         <div class="article-actions">
