@@ -36,6 +36,7 @@ gem 'bootstrap-will_paginate'
 gem 'guard'
 gem 'guard-minitest'
 gem 'rails-controller-testing'
+gem 'loofah', '~> 2.2.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
