@@ -116,6 +116,11 @@ footer ul {
   padding-left: 0;
 }
 
+.badge-pill {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
 .top-pad {
   padding-top: 1rem;
 }
@@ -123,3 +128,8 @@ footer ul {
 .pagination {
   justify-content: center;
 }
+
+.input_checkbox {
+  margin-right: 8px;
+}
+

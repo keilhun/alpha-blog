@@ -1,0 +1,4 @@
+<h1 class="text-center"><%= "Category: " + @category.name %></h1>
+<div><%= will_paginate @category_articles, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer %></div>
+<%= render 'articles/article', obj: @category_articles %>
+<div class="paging"><%= will_paginate @category_articles, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer %></div>
