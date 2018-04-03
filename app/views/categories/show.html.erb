@@ -1,4 +1,9 @@
 <h1 class="text-center"><%= "Category: " + @category.name %></h1>
 <div><%= will_paginate @category_articles, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer %></div>
+<% if logged_in? &&  current_user.admin? %>
+  <div class="text-center" id="edit_cat">
+    <span class="badge-pill text-center badge-warning"><%= link_to "Edit Category Name", edit_category_path(@category) %></span>
+  </div>
+<% end %>
 <%= render 'articles/article', obj: @category_articles %>
 <div class="paging"><%= will_paginate @category_articles, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer %></div>
